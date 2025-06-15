@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=3 uid="uid://da04fax0aud3o"]
+
+[ext_resource type="PackedScene" uid="uid://c4y4g833o53py" path="res://assets/Characters/gltf/Barbarian.glb" id="1_vhopa"]
+[ext_resource type="AudioStream" uid="uid://bhm318xce5fnt" path="res://audio/walking.ogg" id="2_grdwu"]
+[ext_resource type="AudioStream" uid="uid://7or0neho1jl4" path="res://audio/jump.ogg" id="3_t75ll"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wrwww"]
+radius = 1.3096
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_njate"]
+radius = 0.261403
+
+[sub_resource type="Curve" id="Curve_qxpx5"]
+_data = [Vector2(0, 0.852632), 0.0, 0.0, 0, 0, Vector2(0.727931, 0.526316), -3.74075, -3.74075, 0, 0, Vector2(1, 0.0105263), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_h5ly7"]
+curve = SubResource("Curve_qxpx5")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_julhm"]
+direction = Vector3(0, 0, 0)
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_h5ly7")
+
+[sub_resource type="SphereMesh" id="SphereMesh_46eqo"]
+radius = 0.25
+height = 0.5
+
+[node name="Character1" type="CharacterBody3D"]
+
+[node name="Barbarian" parent="." instance=ExtResource("1_vhopa")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.040908, 1.34341, 0)
+shape = SubResource("SphereShape3D_wrwww")
+
+[node name="enemy_hit_area" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 4
+monitoring = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="enemy_hit_area"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00125754, 0)
+shape = SubResource("SphereShape3D_njate")
+
+[node name="dust" type="GPUParticles3D" parent="."]
+emitting = false
+lifetime = 0.45
+process_material = SubResource("ParticleProcessMaterial_julhm")
+draw_pass_1 = SubResource("SphereMesh_46eqo")
+
+[node name="sfx" type="Node" parent="."]
+
+[node name="walking" type="AudioStreamPlayer" parent="sfx"]
+stream = ExtResource("2_grdwu")
+autoplay = true
+
+[node name="jumping" type="AudioStreamPlayer" parent="sfx"]
+stream = ExtResource("3_t75ll")

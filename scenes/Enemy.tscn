@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpdvt0dq0e8a8"]
+
+[ext_resource type="PackedScene" uid="uid://dx8fd2sampaec" path="res://models/enemy.blend" id="1_5t027"]
+[ext_resource type="Script" path="res://scripts/Enemy.cs" id="2_83aau"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tgjxa"]
+radius = 0.38564
+
+[node name="enemy" instance=ExtResource("1_5t027")]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("2_83aau")
+
+[node name="leg-left" parent="character/root" index="2"]
+transform = Transform3D(0.965926, 0, 0.258819, 0, 1, 0, -0.258819, 0, 0.965926, 0.125, 0.17625, -0.02375)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.395874, 0)
+shape = SubResource("SphereShape3D_tgjxa")

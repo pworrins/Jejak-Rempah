@@ -1,0 +1,159 @@
+[gd_scene load_steps=12 format=3 uid="uid://h5scdycnql0t"]
+
+[ext_resource type="Script" path="res://scripts/MainMenu.cs" id="1_p4xbf"]
+[ext_resource type="Texture2D" uid="uid://du2d00kdnpyt0" path="res://assets/Images/button.png" id="2_44woi"]
+[ext_resource type="FontFile" uid="uid://cojexbo58rhgb" path="res://assets/Font/Daily Bubble.ttf" id="2_f6r87"]
+[ext_resource type="Texture2D" uid="uid://jw6lebw34lvs" path="res://assets/Images/bg.jpg" id="2_y1lu4"]
+[ext_resource type="Texture2D" uid="uid://df1bny07a6xqk" path="res://assets/Images/bar-removebg-preview.png" id="3_pv5el"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_363mr"]
+font_size = 90
+font_color = Color(0.780392, 0.686275, 0.0431373, 1)
+shadow_size = 2
+shadow_color = Color(0.126339, 0.0809216, 0.0316028, 0.815686)
+shadow_offset = Vector2(10, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_063q7"]
+texture = ExtResource("2_44woi")
+expand_margin_left = 40.0
+expand_margin_top = 4.0
+expand_margin_right = 40.0
+expand_margin_bottom = 10.0
+modulate_color = Color(0.721569, 0.694118, 0.129412, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kf6lu"]
+texture = ExtResource("2_44woi")
+expand_margin_left = 40.0
+expand_margin_top = 4.0
+expand_margin_right = 40.0
+expand_margin_bottom = 10.0
+modulate_color = Color(0.529412, 0.227451, 0.129412, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3hkhe"]
+texture = ExtResource("2_44woi")
+expand_margin_left = 50.0
+expand_margin_top = 10.0
+expand_margin_right = 50.0
+expand_margin_bottom = 25.0
+modulate_color = Color(0.721569, 0.694118, 0.129412, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5lcd"]
+texture = ExtResource("2_44woi")
+expand_margin_left = 50.0
+expand_margin_top = 10.0
+expand_margin_right = 50.0
+expand_margin_bottom = 25.0
+modulate_color = Color(0.607843, 0.227451, 0.129412, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_u63i3"]
+font = ExtResource("2_f6r87")
+font_size = 25
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p4xbf")
+LevelOnePath = "res://scenes/levels/Level1.tscn"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+modulate = Color(0.427451, 0.243137, 0.0784314, 1)
+layout_mode = 0
+offset_right = 1156.0
+offset_bottom = 652.0
+texture = ExtResource("2_y1lu4")
+
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -372.0
+offset_top = -310.0
+offset_right = 372.0
+offset_bottom = 430.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_pv5el")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -170.5
+offset_top = -127.5
+offset_right = 170.5
+offset_bottom = 127.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_f6r87")
+text = "Jejak
+Rempah"
+label_settings = SubResource("LabelSettings_363mr")
+horizontal_alignment = 1
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -92.0
+offset_top = -166.0
+offset_right = 80.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_focus_color = Color(0.958888, 0.958888, 0.958888, 1)
+theme_override_colors/font_color = Color(0.290969, 0.195403, 0.072338, 1)
+theme_override_fonts/font = ExtResource("2_f6r87")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxTexture_063q7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kf6lu")
+theme_override_styles/normal = SubResource("StyleBoxTexture_063q7")
+text = "PLAY"
+
+[node name="ShowHideScores" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -132.5
+offset_top = -79.0
+offset_right = 132.5
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_focus_color = Color(0.970602, 0.970602, 0.970602, 1)
+theme_override_colors/font_color = Color(0.290196, 0.196078, 0.0705882, 1)
+theme_override_fonts/font = ExtResource("2_f6r87")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxTexture_3hkhe")
+theme_override_styles/hover = SubResource("StyleBoxTexture_o5lcd")
+theme_override_styles/normal = SubResource("StyleBoxTexture_3hkhe")
+text = "Show/Hide Scores"
+
+[node name="scores" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 502.0
+offset_right = 316.0
+offset_bottom = 652.0
+theme_override_fonts/font = ExtResource("2_f6r87")
+theme_override_font_sizes/font_size = 30
+text = "SCORES"
+label_settings = SubResource("LabelSettings_u63i3")
+
+[connection signal="pressed" from="Play" to="." method="StartGame"]
+[connection signal="pressed" from="ShowHideScores" to="." method="ShowHideScores"]
