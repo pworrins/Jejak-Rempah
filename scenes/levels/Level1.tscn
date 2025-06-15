@@ -1,36 +1,61 @@
+<<<<<<< HEAD
 [gd_scene load_steps=24 format=3 uid="uid://c81poebjcxtfe"]
+=======
+[gd_scene load_steps=19 format=3 uid="uid://c81poebjcxtfe"]
+>>>>>>> d68432c (create scenes)
 
 [ext_resource type="Script" path="res://scripts/Level.cs" id="1_0e6hx"]
 [ext_resource type="Script" path="res://scripts/UI.cs" id="2_83i5d"]
 [ext_resource type="PackedScene" uid="uid://dg28me21bhh51" path="res://scenes/Player.tscn" id="2_fbelt"]
 [ext_resource type="Texture2D" uid="uid://1w5m52n1d1e4" path="res://assets/Images/coin_icon.png" id="3_bqi7h"]
 [ext_resource type="Script" path="res://scripts/GameCam.cs" id="3_ipe28"]
+<<<<<<< HEAD
+=======
+[ext_resource type="MeshLibrary" uid="uid://uvwssspgspdb" path="res://assets/levelgridtiles.tres" id="4_oj888"]
+>>>>>>> d68432c (create scenes)
 [ext_resource type="PackedScene" uid="uid://cpdvt0dq0e8a8" path="res://scenes/Enemy.tscn" id="5_clc2e"]
 [ext_resource type="PackedScene" uid="uid://bw5xpu662v3kd" path="res://scenes/Coin.tscn" id="6_qm3p2"]
 [ext_resource type="PackedScene" uid="uid://cojq3pd17pawn" path="res://scenes/Flag.tscn" id="9_nu8yx"]
 [ext_resource type="PackedScene" uid="uid://xyfnm8kyg31n" path="res://scenes/environment/joglo.tscn" id="10_6lu2u"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://dqhyxq76vfq50" path="res://scenes/environment/batu.tscn" id="12_py46s"]
 [ext_resource type="PackedScene" uid="uid://b4efcslqnbt16" path="res://scenes/environment/jembatan.tscn" id="13_mbt2r"]
 [ext_resource type="PackedScene" uid="uid://iot4q4y4cn8r" path="res://scenes/environment/grass.tscn" id="13_op3m3"]
 [ext_resource type="PackedScene" uid="uid://cxsana1qtrsdq" path="res://scenes/rempah/jahe.tscn" id="13_wc2gb"]
 [ext_resource type="AudioStream" uid="uid://c168tcg2m5ve0" path="res://audio/jawa.mp3" id="15_fudrp"]
 [ext_resource type="Texture2D" uid="uid://d33xofgkyyfnd" path="res://assets/Images/Circle.png" id="17_4g312"]
+=======
+[ext_resource type="PackedScene" uid="uid://qrwb1bol7gw1" path="res://scenes/environment/sawah_terasering.tscn" id="11_bgdyf"]
+[ext_resource type="PackedScene" uid="uid://dad0sxb34775a" path="res://scenes/pala.tscn" id="13_jwkhe"]
+[ext_resource type="PackedScene" uid="uid://cxsana1qtrsdq" path="res://scenes/jahe.tscn" id="13_wc2gb"]
+[ext_resource type="Script" path="res://scripts/Pala.cs" id="14_4cn5x"]
+>>>>>>> d68432c (create scenes)
 
 [sub_resource type="LabelSettings" id="LabelSettings_qtvwl"]
 font_size = 61
 
+<<<<<<< HEAD
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uhpru"]
 sky_top_color = Color(0.269097, 0.291604, 0.322917, 1)
 sky_cover_modulate = Color(0.171875, 0.151286, 0.151286, 1)
 
 [sub_resource type="Sky" id="Sky_s5ls6"]
 sky_material = SubResource("ProceduralSkyMaterial_uhpru")
+=======
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ya3l8"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_s5ls6"]
+sky_material = SubResource("ProceduralSkyMaterial_ya3l8")
+>>>>>>> d68432c (create scenes)
 
 [sub_resource type="Environment" id="Environment_llq0q"]
 background_mode = 2
 sky = SubResource("Sky_s5ls6")
 tonemap_mode = 2
 glow_enabled = true
+<<<<<<< HEAD
 volumetric_fog_anisotropy = 0.69
 volumetric_fog_detail_spread = 2.14355
 
@@ -64,6 +89,8 @@ use_particle_trails = true
 [sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_60wcr"]
 material = SubResource("StandardMaterial3D_d4e5m")
 curve = SubResource("Curve_i7yew")
+=======
+>>>>>>> d68432c (create scenes)
 
 [node name="Level1" type="Node3D"]
 script = ExtResource("1_0e6hx")
@@ -92,11 +119,18 @@ environment = SubResource("Environment_llq0q")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+<<<<<<< HEAD
 light_color = Color(0.708333, 0.692193, 0.57921, 1)
 shadow_enabled = true
 
 [node name="character" parent="." instance=ExtResource("2_fbelt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+=======
+shadow_enabled = true
+
+[node name="character" parent="." instance=ExtResource("2_fbelt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59944e-07, 0.536435, 0)
+>>>>>>> d68432c (create scenes)
 JUMPVELOCITY = 4.0
 
 [node name="GameCam" type="Node3D" parent="."]
@@ -108,6 +142,7 @@ script = ExtResource("3_ipe28")
 [node name="Camera3D" type="Camera3D" parent="GameCam/Pivot"]
 transform = Transform3D(0.707107, -0.183013, 0.683013, 0, 0.965926, 0.258819, -0.707107, -0.183013, 0.683013, 3.49679, 2.13287, 3.30268)
 
+<<<<<<< HEAD
 [node name="enemies" type="Node" parent="."]
 
 [node name="enemy" parent="enemies" instance=ExtResource("5_clc2e")]
@@ -127,10 +162,34 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60618, 4.7, -48.0352)
 
 [node name="enemy6" parent="enemies" instance=ExtResource("5_clc2e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.901, 5.4, -46.0281)
+=======
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("4_oj888")
+cell_size = Vector3(2, 1, 2)
+data = {
+"cells": PackedInt32Array(-1, 0, 0, -1, 65535, 0, -1, 65534, 0, -1, 65533, 0, -65536, 65533, 0, -65536, 65532, 0, -1, 65532, 0, -1, 65531, 0, -1, 65530, 0, -2, 65530, 0, -2, 65531, 0, -2, 65532, 0, -65535, 65533, 0, -65535, 65534, 0, -65536, 65534, 0, -65536, 65535, 0, -65536, 0, 0, -65536, 65531, 0, -65536, 65530, 0, -65536, 65529, 0, -65536, 65528, 0, -65535, 65528, 1441795, -65535, 65527, 1441796, -65536, 65527, 0, -65535, 65526, 1441796, -65535, 65525, 1441796, -1, 65529, 0, -1, 65528, 0, -1, 65527, 0, -1, 65526, 0, -1, 65525, 0, -1, 65524, 0, -65536, 65524, 0, -65536, 65525, 0, -65536, 65526, 0, -65536, 65523, 0, 65535, 65522, 1441795, 65534, 65521, 1441792, 65535, 65521, 1441792, 0, 65521, 0, 1, 65521, 1441792, 65534, 65520, 1441792, 65535, 65520, 1441792, 0, 65520, 0, 2, 65521, 1441792, 1, 65520, 1441792, 2, 65520, 1441792, 65533, 65521, 1441792, 65532, 65521, 1441792, 65532, 65520, 1441792, 65533, 65520, 1441792, 0, 65517, 0, 65533, 65517, 1441792, 65534, 65515, 1441792, 65535, 65515, 1441792, 65535, 65514, 1441792, 65534, 65514, 1441792, 65533, 65515, 1441792, 0, 65515, 1441792, 0, 65514, 1441792, 0, 65513, 1441792, 0, 65512, 1441792, 65534, 65512, 1441792, 65533, 65513, 1441792, 65533, 65514, 1441792, 65533, 65512, 1441792, 65535, 65512, 1441792, 0, 65511, 1441792, 65535, 65511, 1441792, 65535, 65510, 1441792, 65535, 65509, 1441792, 0, 65509, 1441792, 0, 65510, 1441792, 65533, 65510, 1441792, 65534, 65508, 1441792, 65533, 65508, 1441792, 65535, 65508, 1441792, 0, 65508, 1441792, 0, 65507, 1441792, 65535, 65507, 1441792, 65534, 65507, 1441792, 65533, 65507, 1441792, 65534, 65505, 1441792, 65535, 65505, 1441792, 65535, 65506, 1441792, 0, 65506, 1441792, 65534, 65506, 1441792, 65533, 65505, 1441792, 65533, 65506, 1441792, 65534, 65504, 1441792, 65535, 65504, 1441792, 0, 65505, 1441792, 65535, 65503, 1441792, 65534, 65503, 1441792, 0, 65519, 0, 0, 65518, 0, 0, 65522, 0, -131071, 65529, 1441795, -65535, 65524, 1441796, -65535, 65523, 1441796, 1, 65522, 1441795, 131089, 65505, 1048579, 131088, 65505, 1048579, 131087, 65505, 1048579, 131086, 65505, 1048579, 131085, 65505, 1048579, 131090, 65505, 1048579, 65553, 65504, 1048579, 65552, 65504, 1048579, 65551, 65504, 1048579, 65550, 65504, 1048579, 65549, 65504, 1048579, 65554, 65504, 1048579, 18, 65503, 1048579, 17, 65503, 1048579, 16, 65503, 1048579, 15, 65503, 1048579, 14, 65503, 1048579, 13, 65503, 1048579, 131088, 65506, 1048576, 131088, 65507, 1048576, 131088, 65508, 1048576, 131089, 65508, 1048576, 131089, 65507, 1048576, 131089, 65506, 1048576, 131085, 65506, 1048576, 131085, 65507, 1048576, 131085, 65508, 1048576, 262166, 65512, 1048579, 327702, 65513, 1048579, 393238, 65514, 1048579, 393254, 65525, 3, 458789, 65525, 3, 524324, 65525, 3, 589857, 65524, 3, 655392, 65524, 3, 720927, 65524, 3)
+}
+metadata/_editor_floor_ = Vector3(0, 11, 0)
+
+[node name="enemies" type="Node" parent="."]
+
+[node name="enemy" parent="enemies" instance=ExtResource("5_clc2e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532566, -20)
+
+[node name="enemy2" parent="enemies" instance=ExtResource("5_clc2e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90091, 0.532566, -20)
+
+[node name="enemy3" parent="enemies" instance=ExtResource("5_clc2e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532566, -22.1944)
+
+[node name="enemy4" parent="enemies" instance=ExtResource("5_clc2e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90091, 0.532566, -22.1944)
+>>>>>>> d68432c (create scenes)
 
 [node name="coins" type="Node" parent="."]
 
 [node name="coin" parent="coins" instance=ExtResource("6_qm3p2")]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.42657, 3.24775, -8.60221)
 
 [node name="coin2" parent="coins" instance=ExtResource("6_qm3p2")]
@@ -162,11 +221,93 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 3.48562, -8.602)
 
 [node name="flag" parent="." instance=ExtResource("9_nu8yx")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.59524, 6.36662, -53.9708)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.13552, 1.27922, -8.67218)
+
+[node name="coin2" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.98289, 2.33995, -46.0595)
+
+[node name="coin3" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28048, -8.49117)
+
+[node name="coin4" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3473, 1.35442, -33.6429)
+
+[node name="coin5" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28048, -12.3398)
+
+[node name="coin6" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04608, 1.28048, -12.3398)
+
+[node name="coin7" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28048, -15.8098)
+
+[node name="coin8" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04608, 1.28048, -15.8098)
+
+[node name="coin9" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05358, 3.32605, -28.8148)
+
+[node name="coin10" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09966, 2.07793, -28.8148)
+
+[node name="coin11" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.493196, 2.07793, -28.8148)
+
+[node name="coin12" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55288, 2.07793, -28.8148)
+
+[node name="coin13" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.26334, 2.07793, -28.8148)
+
+[node name="coin14" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.21726, 3.32605, -28.8148)
+
+[node name="coin15" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97703, 2.07793, -35.9635)
+
+[node name="coin16" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8761, 2.07793, -35.9635)
+
+[node name="coin17" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 3.30601, -44.1246)
+
+[node name="coin18" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -57.7733)
+
+[node name="coin19" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -57.7733)
+
+[node name="coin20" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -57.7733)
+
+[node name="coin21" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -55.2925)
+
+[node name="coin22" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -55.2925)
+
+[node name="coin23" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -55.2925)
+
+[node name="coin24" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -60.213)
+
+[node name="coin25" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -60.213)
+
+[node name="coin26" parent="coins" instance=ExtResource("6_qm3p2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -60.213)
+
+[node name="flag" parent="." instance=ExtResource("9_nu8yx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.2666, 12.4168, -25.7354)
+>>>>>>> d68432c (create scenes)
 NextLevelPath = "res://scenes/levels/Level2.tscn"
 
 [node name="environment" type="Node" parent="."]
 
 [node name="joglo" parent="environment" instance=ExtResource("10_6lu2u")]
+<<<<<<< HEAD
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5, 6.8, -55)
 
 [node name="batu" parent="environment" instance=ExtResource("12_py46s")]
@@ -177,10 +318,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.7006, 1.4074, -46.7062)
 
 [node name="grass" parent="environment" instance=ExtResource("13_op3m3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.456, 1, -24.135)
+=======
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.58227, 1, -63.3378)
+
+[node name="sawah_terasering" parent="environment" instance=ExtResource("11_bgdyf")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 56.9206, 6.86615, -32.901)
+>>>>>>> d68432c (create scenes)
 
 [node name="jahe" type="Node" parent="."]
 
 [node name="jahe" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -45)
 
 [node name="jahe6" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
@@ -219,3 +367,25 @@ draw_pass_1 = SubResource("RibbonTrailMesh_60wcr")
 [node name="LevelCompleteSound" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("15_fudrp")
 autoplay = true
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -0.451734)
+
+[node name="jahe2" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -6.51997)
+
+[node name="jahe3" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -9.12064)
+
+[node name="jahe4" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -10.421)
+
+[node name="jahe5" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -15.1889)
+
+[node name="pala" type="Node" parent="."]
+
+[node name="pala" parent="pala" groups=["rempah"] instance=ExtResource("13_jwkhe")]
+script = ExtResource("14_4cn5x")
+
+[connection signal="body_entered" from="pala/pala" to="." method="Collected"]
+>>>>>>> d68432c (create scenes)
