@@ -5,7 +5,7 @@ public partial class Pala : Area3D
 {
 	// Signal untuk ketika pala dikumpulkan dengan nilai poin
 	[Signal]
-	public delegate void GingerCollectedEventHandler(int points);
+	public delegate void PalaCollectedEventHandler(int points);
 
 	public CollisionShape3D col;
 	public AudioStreamPlayer spice_fx;
@@ -14,7 +14,7 @@ public partial class Pala : Area3D
 	public float spin_speed = 3.0f;
 	
 	[Export]
-	public int point_value = 7; // Total poin jika mengenai pala =7
+	public int point_value = 7; // Total poin jika mengenai pala = 7
 	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -22,8 +22,11 @@ public partial class Pala : Area3D
 		spice_fx = GetNode<AudioStreamPlayer>("spice_fx");
 		col = GetNode<CollisionShape3D>("col");
 		
-		// PENTING: Hubungkan signal AreaEntered ke method Collected
-		AreaEntered += OnAreaEntered;
+		// PENTING: Hanya hubungkan salah satu sinyal!
+        // Jika player Anda adalah CharacterBody3D atau RigidBody3D, gunakan BodyEntered.
+        // Jika player Anda adalah Area3D, gunakan AreaEntered.
+		// Asumsi Player adalah Body, maka kita gunakan BodyEntered.
+		//AreaEntered += OnAreaEntered; // Komentari atau hapus baris ini
 		BodyEntered += OnBodyEntered;
 	}
 
@@ -47,6 +50,8 @@ public partial class Pala : Area3D
 		}
 	}
 	
+	// Method OnAreaEntered tidak akan terpanggil jika koneksinya dihapus di _Ready()
+	// Anda bisa menghapusnya sepenuhnya atau membiarkannya jika Anda hanya mengomentari koneksinya.
 	public void OnAreaEntered(Area3D area)
 	{
 		if (area.GetParent() is Player player)
@@ -64,7 +69,7 @@ public partial class Pala : Area3D
 		EmitSignal("PalaCollected", point_value);
 		
 		// Debug print untuk memastikan signal dipanggil
-		GD.Print($"pala collected! Points: {point_value}");
+		GD.Print($"Pala collected! Points: {point_value}");
 		
 		// Hide so it seems like it was removed
 		Hide();

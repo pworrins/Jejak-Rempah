@@ -1,0 +1,20 @@
+# Godot folders
+.godot/
+.import/
+*.import
+*.tmp
+*.vulkan.cache
+*.md5
+
+# Editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build outputs
+bin/
+obj/
+*.csproj.user
+*.suo
+*.user
+*.old

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dg28me21bhh51"]
+[gd_scene load_steps=12 format=3 uid="uid://dg28me21bhh51"]
 
 [ext_resource type="PackedScene" uid="uid://ckyq5c4eih2wg" path="res://models/character.glb" id="1_dvtur"]
 [ext_resource type="Script" path="res://scripts/Player.cs" id="2_47qy2"]
@@ -23,7 +23,15 @@ spread = 180.0
 gravity = Vector3(0, 0, 0)
 scale_curve = SubResource("CurveTexture_h5ly7")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1yix"]
+albedo_color = Color(0.801901, 0.783529, 0.864583, 1)
+metallic = 0.14
+metallic_specular = 1.0
+emission_enabled = true
+emission = Color(0.885417, 0.820855, 0.820855, 1)
+
 [sub_resource type="SphereMesh" id="SphereMesh_pw7d7"]
+material = SubResource("StandardMaterial3D_h1yix")
 radius = 0.25
 height = 0.5
 

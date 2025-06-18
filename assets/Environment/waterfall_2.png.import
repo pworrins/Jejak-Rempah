@@ -1,0 +1,38 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bik4i377wjxve"
+path.s3tc="res://.godot/imported/waterfall_2.png-9446efabea1b966a22847587b534d15a.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "8f0dabf7a78304c98617fbd6f29f406f"
+}
+
+[deps]
+
+source_file="res://assets/Environment/waterfall_2.png"
+dest_files=["res://.godot/imported/waterfall_2.png-9446efabea1b966a22847587b534d15a.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=1
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=1
+roughness/src_normal="res://assets/Environment/waterfall_2.png"
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

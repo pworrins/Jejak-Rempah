@@ -15,5 +15,3 @@ shape = SubResource("SphereShape3D_7wski")
 
 [node name="coin_fx" type="AudioStreamPlayer" parent="." index="2"]
 stream = ExtResource("3_r5nn0")
-
-[connection signal="body_entered" from="." to="." method="Collected"]

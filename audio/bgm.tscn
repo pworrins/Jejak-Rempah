@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://mxuvooekxgmh"]
+
+[ext_resource type="AudioStream" uid="uid://cm33hawb06efu" path="res://audio/Getting It Done Kevin MacLeod.mp3" id="1_nif3x"]
+
+[node name="BGM" type="AudioStreamPlayer"]
+stream = ExtResource("1_nif3x")
+volume_db = -48.238
+autoplay = true

@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c5trc4hy86utg"]
+
+[ext_resource type="Shader" path="res://assets/Environment/map/terrain/terrain_shader.gdshader" id="1_4k0ee"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_4k0ee")
+shader_parameter/wall_edge_offset = 1.0
+shader_parameter/cliff_scale = 1.0
+shader_parameter/triplanar_scale = Vector3(1, 1, 1)
+shader_parameter/triplanar_offset = Vector3(0, 0, 0)
+shader_parameter/triplanar_sharpness = 0.5

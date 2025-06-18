@@ -1,13 +1,261 @@
-[gd_scene load_steps=3 format=3 uid="uid://iot4q4y4cn8r"]
+[gd_scene load_steps=8 format=4 uid="uid://iot4q4y4cn8r"]
 
 [ext_resource type="PackedScene" uid="uid://bidat8w7hco70" path="res://assets/Environment/grass_lowpoly.glb" id="1_oibjt"]
+[ext_resource type="Texture2D" uid="uid://donbfbkby12e4" path="res://assets/Environment/grass_lowpoly_0.png" id="2_lieqi"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_e4se6"]
 data = PackedVector3Array(38.4163, 6.5373, 9.5068, 38.5307, -6.5373, -9.5068, 38.5307, -6.5373, 9.5068, 38.4163, 6.5373, 9.5068, 38.4163, 6.5373, -9.5068, 38.5307, -6.5373, -9.5068, 31.9354, -0.0001, 9.5068, 45.0116, -0.0001, -9.5068, 45.0116, -0.0001, 9.5068, 31.9354, -0.0001, 9.5068, 31.9354, -0.0001, -9.5068, 45.0116, -0.0001, -9.5068, 0.0551, 6.5373, 9.5068, 0.1681, -6.5373, -9.5068, 0.1681, -6.5373, 9.5068, 0.0551, 6.5373, 9.5068, 0.0551, 6.5373, -9.5068, 0.1681, -6.5373, -9.5068, -6.4258, -0.0001, 9.5068, 6.649, -0.0001, -9.5068, 6.649, -0.0001, 9.5068, -6.4258, -0.0001, 9.5068, -6.4258, -0.0001, -9.5068, 6.649, -0.0001, -9.5068, -18.7518, 6.5373, 9.5068, -18.6388, -6.5373, -9.5068, -18.6388, -6.5373, 9.5068, -18.7518, 6.5373, 9.5068, -18.7518, 6.5373, -9.5068, -18.6388, -6.5373, -9.5068, -25.2327, -0.0001, 9.5068, -12.1579, -0.0001, -9.5068, -12.1579, -0.0001, 9.5068, -25.2327, -0.0001, 9.5068, -25.2327, -0.0001, -9.5068, -12.1579, -0.0001, -9.5068, -37.737, 6.5373, 9.5068, -37.6227, -6.5373, -9.5068, -37.6227, -6.5373, 9.5068, -37.737, 6.5373, 9.5068, -37.737, 6.5373, -9.5068, -37.6227, -6.5373, -9.5068, -44.2166, -0.0001, 9.5068, -31.1417, -0.0001, -9.5068, -31.1417, -0.0001, 9.5068, -44.2166, -0.0001, 9.5068, -44.2166, -0.0001, -9.5068, -31.1417, -0.0001, -9.5068, 17.7292, 6.5373, 9.5068, 17.8435, -6.5373, -9.5068, 17.8435, -6.5373, 9.5068, 17.7292, 6.5373, 9.5068, 17.7292, 6.5373, -9.5068, 17.8435, -6.5373, -9.5068, 11.2496, -0.0001, 9.5068, 24.3244, -0.0001, -9.5068, 24.3244, -0.0001, 9.5068, 11.2496, -0.0001, 9.5068, 11.2496, -0.0001, -9.5068, 24.3244, -0.0001, -9.5068)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtypi"]
+resource_name = "lambert2.001"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("2_lieqi")
+roughness = 0.552786
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_e1u0e"]
+_surfaces = [{
+"aabb": AABB(-44.2166, -6.53726, -9.50683, 89.2281, 13.0745, 19.0137),
+"format": 34896613377,
+"index_count": 60,
+"index_data": PackedByteArray("AAADAAEAAAACAAMABAAHAAUABAAGAAcACAALAAkACAAKAAsADAAPAA0ADAAOAA8AEAATABEAEAASABMAFAAXABUAFAAWABcAGAAbABkAGAAaABsAHAAfAB0AHAAeAB8AIAAjACEAIAAiACMAJAAnACUAJAAmACcA"),
+"name": "lambert2.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("E+3/////AABn7QAA//8AABPt//8AAAAAZ+0AAAAAAAB72v9///8AAP///3///wAAe9r/fwAAAAD///9/AAAAAAR//////wAAV38AAP//AAAEf///AAAAAFd/AAAAAAAAbGz/f///AADvkf9///8AAGxs/38AAAAA75H/fwAAAAAPSf////8AAGJJAAD//wAAD0n//wAAAABiSQAAAAAAAHc2/3///wAA+lv/f///AAB3Nv9/AAAAAPpb/38AAAAAlxL/////AADrEgAA//8AAJcS//8AAAAA6xIAAAAAAAAAAP9///8AAIMl/3///wAAAAD/fwAAAACDJf9/AAAAALmx/////wAADbIAAP//AAC5sf//AAAAAA2yAAAAAAAAIp//f///AAClxP9///8AACKf/38AAAAApcT/fwAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bta62"]
+resource_name = "Sketchfab_Scene_Object_0"
+_surfaces = [{
+"aabb": AABB(-44.2166, -6.53726, -9.50683, 89.2281, 13.0745, 19.0137),
+"attribute_data": PackedByteArray("9wFPAaH+TwH3AVv/of5b//cBTwGh/k8B9wFb/6H+W//3AU8Bof5PAfcBW/+h/lv/9wFPAaH+TwH3AVv/of5b//cBTwGh/k8B9wFb/6H+W//3AU8Bof5PAfcBW/+h/lv/9wFPAaH+TwH3AVv/of5b//cBTwGh/k8B9wFb/6H+W//3AU8Bof5PAfcBW/+h/lv/9wFPAaH+TwH3AVv/of5b/w=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAADAAEAAAACAAMABAAHAAUABAAGAAcACAALAAkACAAKAAsADAAPAA0ADAAOAA8AEAATABEAEAASABMAFAAXABUAFAAWABcAGAAbABkAGAAaABsAHAAfAB0AHAAeAB8AIAAjACEAIAAiACMAJAAnACUAJAAmACcA"),
+"material": SubResource("StandardMaterial3D_vtypi"),
+"name": "lambert2.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("E+3/////3ipn7QAA///eKhPt//8AAN4qZ+0AAAAA3ip72v9/////P////3////8/e9r/fwAA/z////9/AAD/PwR//////94qV38AAP//3ioEf///AADeKld/AAAAAN4qbGz/f////z/vkf9/////P2xs/38AAP8/75H/fwAA/z8PSf/////eKmJJAAD//94qD0n//wAA3ipiSQAAAADeKnc2/3////8/+lv/f////z93Nv9/AAD/P/pb/38AAP8/lxL/////3irrEgAA///eKpcS//8AAN4q6xIAAAAA3ioAAP9/////P4Ml/3////8/AAD/fwAA/z+DJf9/AAD/P7mx/////94qDbIAAP//3iq5sf//AADeKg2yAAAAAN4qIp//f////z+lxP9/////PyKf/38AAP8/pcT/fwAA/z/pqnRV6ap0VemqdFXpqnRV////f////3////9/////f+mqdFXpqnRV6ap0VemqdFX///9/////f////3////9/6ap0VemqdFXpqnRV6ap0Vf///3////9/////f////3/pqnRV6ap0VemqdFXpqnRV////f////3////9/////f+mqdFXpqnRV6ap0VemqdFX///9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_e1u0e")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_t2yeb"]
+resource_name = "Sketchfab_Scene_Object_0"
+_surfaces = [{
+"aabb": AABB(-44.2166, -6.53726, -9.50683, 89.2281, 13.0745, 19.0137),
+"attribute_data": PackedByteArray("9wFPAaH+TwH3AVv/of5b//cBTwGh/k8B9wFb/6H+W//3AU8Bof5PAfcBW/+h/lv/9wFPAaH+TwH3AVv/of5b//cBTwGh/k8B9wFb/6H+W//3AU8Bof5PAfcBW/+h/lv/9wFPAaH+TwH3AVv/of5b//cBTwGh/k8B9wFb/6H+W//3AU8Bof5PAfcBW/+h/lv/9wFPAaH+TwH3AVv/of5b/w=="),
+"format": 34896613399,
+"index_count": 60,
+"index_data": PackedByteArray("AAADAAEAAAACAAMABAAHAAUABAAGAAcACAALAAkACAAKAAsADAAPAA0ADAAOAA8AEAATABEAEAASABMAFAAXABUAFAAWABcAGAAbABkAGAAaABsAHAAfAB0AHAAeAB8AIAAjACEAIAAiACMAJAAnACUAJAAmACcA"),
+"material": SubResource("StandardMaterial3D_vtypi"),
+"name": "lambert2.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("E+3/////3ipn7QAA///eKhPt//8AAN4qZ+0AAAAA3ip72v9/////P////3////8/e9r/fwAA/z////9/AAD/PwR//////94qV38AAP//3ioEf///AADeKld/AAAAAN4qbGz/f////z/vkf9/////P2xs/38AAP8/75H/fwAA/z8PSf/////eKmJJAAD//94qD0n//wAA3ipiSQAAAADeKnc2/3////8/+lv/f////z93Nv9/AAD/P/pb/38AAP8/lxL/////3irrEgAA///eKpcS//8AAN4q6xIAAAAA3ioAAP9/////P4Ml/3////8/AAD/fwAA/z+DJf9/AAD/P7mx/////94qDbIAAP//3iq5sf//AADeKg2yAAAAAN4qIp//f////z+lxP9/////PyKf/38AAP8/pcT/fwAA/z/pqnRV6ap0VemqdFXpqnRV////f////3////9/////f+mqdFXpqnRV6ap0VemqdFX///9/////f////3////9/6ap0VemqdFXpqnRV6ap0Vf///3////9/////f////3/pqnRV6ap0VemqdFXpqnRV////f////3////9/////f+mqdFXpqnRV6ap0VemqdFX///9/////f////3////9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_e1u0e")
 
 [node name="grass" instance=ExtResource("1_oibjt")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_4" index="0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_4/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_5" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, -18.8292, -9.53674e-07)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_5" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_5/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_12" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, -95.6071, -55.7731, -3.8147e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_12" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_12/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_13" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, -95.6071, -36.4903, -1.90735e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_13" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_13/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_14" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, -95.6071, -18.5625, 0)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_14" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_14/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_15" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, -95.6071, 0.105856, 1.90735e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_15" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_15/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_16" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, -95.6071, 17.8486, 3.8147e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_16" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_16/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_17" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, -95.6071, 35.8209, 6.67572e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_17" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_17/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_18" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, -95.6071, 53.1564, 8.58307e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_18" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_18/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_19" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 92.5995, 55.8423, 1.14441e-05)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_19" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_19/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_20" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 92.5995, 36.0815, 1.14441e-05)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_20" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_20/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_21" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 92.5995, 19.4591, 1.04904e-05)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_21" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_21/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_22" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="12"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 92.5995, -0.0342512, 9.53674e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_22" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_22/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_23" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="13"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 92.5995, -19.0824, 9.53674e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_23" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_23/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_24" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="14"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 92.5995, -37.0478, 9.53674e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_24" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_24/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_25" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="15"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 92.5995, -55.7257, 8.58307e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_25" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_25/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_6" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="16"]
+transform = Transform3D(1, 0, 0, 0, 1, -7.10543e-15, 0, 7.10543e-15, 1, 0, 18.9375, 1.90735e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_6" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_6/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_7" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, 36.3206, 3.8147e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_7" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_7/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_8" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="18"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, 56.024, 5.72205e-06)
+mesh = SubResource("ArrayMesh_bta62")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_8" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_8/StaticBody3D" index="0"]
+shape = SubResource("ConcavePolygonShape3D_e4se6")
+
+[node name="Object_9" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="19"]
+transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, 56.024, 5.72205e-06)
+mesh = SubResource("ArrayMesh_t2yeb")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_9" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_9/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_e4se6")

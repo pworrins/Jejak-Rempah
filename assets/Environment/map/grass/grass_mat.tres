@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://ovciasxou830"]
+
+[ext_resource type="Shader" path="res://assets/Environment/map/grass/grass.gdshader" id="1_a6hnh"]
+
+[sub_resource type="Gradient" id="Gradient_nbh2e"]
+offsets = PackedFloat32Array(0, 0.337662)
+colors = PackedColorArray(0, 0, 0, 1, 0.604061, 0.833333, 0.0824653, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tnbn4"]
+gradient = SubResource("Gradient_nbh2e")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_aidnp"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_a6hnh")
+shader_parameter/wind_noise_sampler = SubResource("NoiseTexture2D_aidnp")
+shader_parameter/gradient = SubResource("GradientTexture2D_tnbn4")

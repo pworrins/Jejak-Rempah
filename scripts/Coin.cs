@@ -19,8 +19,11 @@ public partial class Coin : Area3D
 		coin_fx = GetNode<AudioStreamPlayer>("coin_fx");
 		col = GetNode<CollisionShape3D>("col");
 		
-		// PENTING: Hubungkan signal AreaEntered/BodyEntered ke method Collected
-		AreaEntered += OnAreaEntered;
+		// PENTING: Hanya hubungkan salah satu sinyal!
+        // Jika player Anda adalah CharacterBody3D atau RigidBody3D, gunakan BodyEntered.
+        // Jika player Anda adalah Area3D, gunakan AreaEntered.
+		// Asumsi Player adalah Body, maka kita gunakan BodyEntered.
+		// AreaEntered += OnAreaEntered; // Komentari atau hapus baris ini
 		BodyEntered += OnBodyEntered;
 	}
 
@@ -44,6 +47,8 @@ public partial class Coin : Area3D
 		}
 	}
 	
+	// Method OnAreaEntered tidak akan terpanggil jika koneksinya dihapus di _Ready()
+	// Anda bisa menghapusnya sepenuhnya atau membiarkannya jika Anda hanya mengomentari koneksinya.
 	public void OnAreaEntered(Area3D area)
 	{
 		if (area.GetParent() is Player player)
