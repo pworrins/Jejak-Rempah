@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=24 format=3 uid="uid://c81poebjcxtfe"]
 =======
 [gd_scene load_steps=19 format=3 uid="uid://c81poebjcxtfe"]
 >>>>>>> d68432c (create scenes)
+=======
+[gd_scene load_steps=24 format=3 uid="uid://c81poebjcxtfe"]
+>>>>>>> 0545ae9 (update game)
 
 [ext_resource type="Script" path="res://scripts/Level.cs" id="1_0e6hx"]
 [ext_resource type="Script" path="res://scripts/UI.cs" id="2_83i5d"]
@@ -10,30 +14,40 @@
 [ext_resource type="Texture2D" uid="uid://1w5m52n1d1e4" path="res://assets/Images/coin_icon.png" id="3_bqi7h"]
 [ext_resource type="Script" path="res://scripts/GameCam.cs" id="3_ipe28"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [ext_resource type="MeshLibrary" uid="uid://uvwssspgspdb" path="res://assets/levelgridtiles.tres" id="4_oj888"]
 >>>>>>> d68432c (create scenes)
+=======
+>>>>>>> 0545ae9 (update game)
 [ext_resource type="PackedScene" uid="uid://cpdvt0dq0e8a8" path="res://scenes/Enemy.tscn" id="5_clc2e"]
 [ext_resource type="PackedScene" uid="uid://bw5xpu662v3kd" path="res://scenes/Coin.tscn" id="6_qm3p2"]
 [ext_resource type="PackedScene" uid="uid://cojq3pd17pawn" path="res://scenes/Flag.tscn" id="9_nu8yx"]
 [ext_resource type="PackedScene" uid="uid://xyfnm8kyg31n" path="res://scenes/environment/joglo.tscn" id="10_6lu2u"]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0545ae9 (update game)
 [ext_resource type="PackedScene" uid="uid://dqhyxq76vfq50" path="res://scenes/environment/batu.tscn" id="12_py46s"]
 [ext_resource type="PackedScene" uid="uid://b4efcslqnbt16" path="res://scenes/environment/jembatan.tscn" id="13_mbt2r"]
 [ext_resource type="PackedScene" uid="uid://iot4q4y4cn8r" path="res://scenes/environment/grass.tscn" id="13_op3m3"]
 [ext_resource type="PackedScene" uid="uid://cxsana1qtrsdq" path="res://scenes/rempah/jahe.tscn" id="13_wc2gb"]
 [ext_resource type="AudioStream" uid="uid://c168tcg2m5ve0" path="res://audio/jawa.mp3" id="15_fudrp"]
 [ext_resource type="Texture2D" uid="uid://d33xofgkyyfnd" path="res://assets/Images/Circle.png" id="17_4g312"]
+<<<<<<< HEAD
 =======
 [ext_resource type="PackedScene" uid="uid://qrwb1bol7gw1" path="res://scenes/environment/sawah_terasering.tscn" id="11_bgdyf"]
 [ext_resource type="PackedScene" uid="uid://dad0sxb34775a" path="res://scenes/pala.tscn" id="13_jwkhe"]
 [ext_resource type="PackedScene" uid="uid://cxsana1qtrsdq" path="res://scenes/jahe.tscn" id="13_wc2gb"]
 [ext_resource type="Script" path="res://scripts/Pala.cs" id="14_4cn5x"]
 >>>>>>> d68432c (create scenes)
+=======
+>>>>>>> 0545ae9 (update game)
 
 [sub_resource type="LabelSettings" id="LabelSettings_qtvwl"]
 font_size = 61
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uhpru"]
 sky_top_color = Color(0.269097, 0.291604, 0.322917, 1)
@@ -49,6 +63,14 @@ ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 [sub_resource type="Sky" id="Sky_s5ls6"]
 sky_material = SubResource("ProceduralSkyMaterial_ya3l8")
 >>>>>>> d68432c (create scenes)
+=======
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uhpru"]
+sky_top_color = Color(0.269097, 0.291604, 0.322917, 1)
+sky_cover_modulate = Color(0.171875, 0.151286, 0.151286, 1)
+
+[sub_resource type="Sky" id="Sky_s5ls6"]
+sky_material = SubResource("ProceduralSkyMaterial_uhpru")
+>>>>>>> 0545ae9 (update game)
 
 [sub_resource type="Environment" id="Environment_llq0q"]
 background_mode = 2
@@ -56,6 +78,9 @@ sky = SubResource("Sky_s5ls6")
 tonemap_mode = 2
 glow_enabled = true
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0545ae9 (update game)
 volumetric_fog_anisotropy = 0.69
 volumetric_fog_detail_spread = 2.14355
 
@@ -89,8 +114,11 @@ use_particle_trails = true
 [sub_resource type="RibbonTrailMesh" id="RibbonTrailMesh_60wcr"]
 material = SubResource("StandardMaterial3D_d4e5m")
 curve = SubResource("Curve_i7yew")
+<<<<<<< HEAD
 =======
 >>>>>>> d68432c (create scenes)
+=======
+>>>>>>> 0545ae9 (update game)
 
 [node name="Level1" type="Node3D"]
 script = ExtResource("1_0e6hx")
@@ -120,6 +148,7 @@ environment = SubResource("Environment_llq0q")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 light_color = Color(0.708333, 0.692193, 0.57921, 1)
 shadow_enabled = true
 
@@ -131,6 +160,13 @@ shadow_enabled = true
 [node name="character" parent="." instance=ExtResource("2_fbelt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59944e-07, 0.536435, 0)
 >>>>>>> d68432c (create scenes)
+=======
+light_color = Color(0.708333, 0.692193, 0.57921, 1)
+shadow_enabled = true
+
+[node name="character" parent="." instance=ExtResource("2_fbelt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
+>>>>>>> 0545ae9 (update game)
 JUMPVELOCITY = 4.0
 
 [node name="GameCam" type="Node3D" parent="."]
@@ -142,6 +178,7 @@ script = ExtResource("3_ipe28")
 [node name="Camera3D" type="Camera3D" parent="GameCam/Pivot"]
 transform = Transform3D(0.707107, -0.183013, 0.683013, 0, 0.965926, 0.258819, -0.707107, -0.183013, 0.683013, 3.49679, 2.13287, 3.30268)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [node name="enemies" type="Node" parent="."]
 
@@ -171,24 +208,37 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 11, 0)
 
+=======
+>>>>>>> 0545ae9 (update game)
 [node name="enemies" type="Node" parent="."]
 
 [node name="enemy" parent="enemies" instance=ExtResource("5_clc2e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532566, -20)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -20)
 
 [node name="enemy2" parent="enemies" instance=ExtResource("5_clc2e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90091, 0.532566, -20)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.901, 4.2, -20)
 
 [node name="enemy3" parent="enemies" instance=ExtResource("5_clc2e")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532566, -22.1944)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3, -22.194)
 
 [node name="enemy4" parent="enemies" instance=ExtResource("5_clc2e")]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90091, 0.532566, -22.1944)
 >>>>>>> d68432c (create scenes)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 4.5, -22)
+
+[node name="enemy5" parent="enemies" instance=ExtResource("5_clc2e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.60618, 4.7, -48.0352)
+
+[node name="enemy6" parent="enemies" instance=ExtResource("5_clc2e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.901, 5.4, -46.0281)
+>>>>>>> 0545ae9 (update game)
 
 [node name="coins" type="Node" parent="."]
 
 [node name="coin" parent="coins" instance=ExtResource("6_qm3p2")]
+<<<<<<< HEAD
 <<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.42657, 3.24775, -8.60221)
 
@@ -223,90 +273,50 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 3.48562, -8.602)
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.59524, 6.36662, -53.9708)
 =======
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.13552, 1.27922, -8.67218)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.42657, 3.24775, -8.60221)
+>>>>>>> 0545ae9 (update game)
 
 [node name="coin2" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.98289, 2.33995, -46.0595)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.427, 2.5, -5)
 
 [node name="coin3" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28048, -8.49117)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 6.4, -30)
 
 [node name="coin4" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3473, 1.35442, -33.6429)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 3.248, -15)
 
 [node name="coin5" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28048, -12.3398)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.8, -30)
 
 [node name="coin6" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04608, 1.28048, -12.3398)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -15)
 
 [node name="coin7" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28048, -15.8098)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.427, 6, -30)
 
 [node name="coin8" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.04608, 1.28048, -15.8098)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.427, 3.56617, -15)
 
 [node name="coin9" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05358, 3.32605, -28.8148)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -8.603)
 
 [node name="coin10" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09966, 2.07793, -28.8148)
-
-[node name="coin11" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.493196, 2.07793, -28.8148)
-
-[node name="coin12" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55288, 2.07793, -28.8148)
-
-[node name="coin13" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.26334, 2.07793, -28.8148)
-
-[node name="coin14" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.21726, 3.32605, -28.8148)
-
-[node name="coin15" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97703, 2.07793, -35.9635)
-
-[node name="coin16" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8761, 2.07793, -35.9635)
-
-[node name="coin17" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 3.30601, -44.1246)
-
-[node name="coin18" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -57.7733)
-
-[node name="coin19" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -57.7733)
-
-[node name="coin20" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -57.7733)
-
-[node name="coin21" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -55.2925)
-
-[node name="coin22" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -55.2925)
-
-[node name="coin23" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -55.2925)
-
-[node name="coin24" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -60.213)
-
-[node name="coin25" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -60.213)
-
-[node name="coin26" parent="coins" instance=ExtResource("6_qm3p2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -60.213)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 3.48562, -8.602)
 
 [node name="flag" parent="." instance=ExtResource("9_nu8yx")]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.2666, 12.4168, -25.7354)
 >>>>>>> d68432c (create scenes)
+=======
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.59524, 6.36662, -53.9708)
+>>>>>>> 0545ae9 (update game)
 NextLevelPath = "res://scenes/levels/Level2.tscn"
 
 [node name="environment" type="Node" parent="."]
 
 [node name="joglo" parent="environment" instance=ExtResource("10_6lu2u")]
+<<<<<<< HEAD
 <<<<<<< HEAD
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5, 6.8, -55)
 
@@ -324,11 +334,26 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 3.58227, 1, -63.3378)
 [node name="sawah_terasering" parent="environment" instance=ExtResource("11_bgdyf")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 56.9206, 6.86615, -32.901)
 >>>>>>> d68432c (create scenes)
+=======
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 5, 6.8, -55)
+
+[node name="batu" parent="environment" instance=ExtResource("12_py46s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 15.2585, 9.853)
+
+[node name="hiasan" parent="environment" instance=ExtResource("13_mbt2r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.7006, 1.4074, -46.7062)
+
+[node name="grass" parent="environment" instance=ExtResource("13_op3m3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.456, 1, -24.135)
+>>>>>>> 0545ae9 (update game)
 
 [node name="jahe" type="Node" parent="."]
 
 [node name="jahe" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0545ae9 (update game)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, -45)
 
 [node name="jahe6" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
@@ -339,6 +364,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.66006, 5.741, -43.3528)
 
 [node name="jahe8" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.09776, 5.5, -43.4828)
+<<<<<<< HEAD
 
 [node name="jahe2" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 4.5, -20)
@@ -369,23 +395,41 @@ stream = ExtResource("15_fudrp")
 autoplay = true
 =======
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -0.451734)
+=======
+>>>>>>> 0545ae9 (update game)
 
 [node name="jahe2" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -6.51997)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 4.5, -20)
 
 [node name="jahe3" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -9.12064)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 4.1, -15)
 
 [node name="jahe4" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -10.421)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 4.7, -15)
 
 [node name="jahe5" parent="jahe" groups=["rempah"] instance=ExtResource("13_wc2gb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.09226, 0.870553, -15.1889)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -5)
 
-[node name="pala" type="Node" parent="."]
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.61779, 0)
+visible = false
+amount = 100
+lifetime = 2.0
+randomness = 0.83
+visibility_aabb = AABB(10, -4, -5, -40, 40, -60)
+trail_enabled = true
+trail_lifetime = 0.42
+process_material = SubResource("ParticleProcessMaterial_drvhx")
+draw_pass_1 = SubResource("RibbonTrailMesh_60wcr")
 
+<<<<<<< HEAD
 [node name="pala" parent="pala" groups=["rempah"] instance=ExtResource("13_jwkhe")]
 script = ExtResource("14_4cn5x")
 
 [connection signal="body_entered" from="pala/pala" to="." method="Collected"]
 >>>>>>> d68432c (create scenes)
+=======
+[node name="LevelCompleteSound" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("15_fudrp")
+autoplay = true
+>>>>>>> 0545ae9 (update game)

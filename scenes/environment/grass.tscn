@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=8 format=4 uid="uid://iot4q4y4cn8r"]
 
 [ext_resource type="PackedScene" uid="uid://bidat8w7hco70" path="res://assets/Environment/grass_lowpoly.glb" id="1_oibjt"]
@@ -8,11 +9,20 @@
 
 [ext_resource type="PackedScene" uid="uid://bidat8w7hco70" path="res://assets/Environment/grass_lowpoly.glb" id="1_oibjt"]
 >>>>>>> d68432c (create scenes)
+=======
+[gd_scene load_steps=8 format=4 uid="uid://iot4q4y4cn8r"]
+
+[ext_resource type="PackedScene" uid="uid://bidat8w7hco70" path="res://assets/Environment/grass_lowpoly.glb" id="1_oibjt"]
+[ext_resource type="Texture2D" uid="uid://donbfbkby12e4" path="res://assets/Environment/grass_lowpoly_0.png" id="2_lieqi"]
+>>>>>>> 0545ae9 (update game)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_e4se6"]
 data = PackedVector3Array(38.4163, 6.5373, 9.5068, 38.5307, -6.5373, -9.5068, 38.5307, -6.5373, 9.5068, 38.4163, 6.5373, 9.5068, 38.4163, 6.5373, -9.5068, 38.5307, -6.5373, -9.5068, 31.9354, -0.0001, 9.5068, 45.0116, -0.0001, -9.5068, 45.0116, -0.0001, 9.5068, 31.9354, -0.0001, 9.5068, 31.9354, -0.0001, -9.5068, 45.0116, -0.0001, -9.5068, 0.0551, 6.5373, 9.5068, 0.1681, -6.5373, -9.5068, 0.1681, -6.5373, 9.5068, 0.0551, 6.5373, 9.5068, 0.0551, 6.5373, -9.5068, 0.1681, -6.5373, -9.5068, -6.4258, -0.0001, 9.5068, 6.649, -0.0001, -9.5068, 6.649, -0.0001, 9.5068, -6.4258, -0.0001, 9.5068, -6.4258, -0.0001, -9.5068, 6.649, -0.0001, -9.5068, -18.7518, 6.5373, 9.5068, -18.6388, -6.5373, -9.5068, -18.6388, -6.5373, 9.5068, -18.7518, 6.5373, 9.5068, -18.7518, 6.5373, -9.5068, -18.6388, -6.5373, -9.5068, -25.2327, -0.0001, 9.5068, -12.1579, -0.0001, -9.5068, -12.1579, -0.0001, 9.5068, -25.2327, -0.0001, 9.5068, -25.2327, -0.0001, -9.5068, -12.1579, -0.0001, -9.5068, -37.737, 6.5373, 9.5068, -37.6227, -6.5373, -9.5068, -37.6227, -6.5373, 9.5068, -37.737, 6.5373, 9.5068, -37.737, 6.5373, -9.5068, -37.6227, -6.5373, -9.5068, -44.2166, -0.0001, 9.5068, -31.1417, -0.0001, -9.5068, -31.1417, -0.0001, 9.5068, -44.2166, -0.0001, 9.5068, -44.2166, -0.0001, -9.5068, -31.1417, -0.0001, -9.5068, 17.7292, 6.5373, 9.5068, 17.8435, -6.5373, -9.5068, 17.8435, -6.5373, 9.5068, 17.7292, 6.5373, 9.5068, 17.7292, 6.5373, -9.5068, 17.8435, -6.5373, -9.5068, 11.2496, -0.0001, 9.5068, 24.3244, -0.0001, -9.5068, 24.3244, -0.0001, 9.5068, 11.2496, -0.0001, 9.5068, 11.2496, -0.0001, -9.5068, 24.3244, -0.0001, -9.5068)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0545ae9 (update game)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vtypi"]
 resource_name = "lambert2.001"
 transparency = 4
@@ -70,8 +80,11 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_e1u0e")
 
+<<<<<<< HEAD
 =======
 >>>>>>> d68432c (create scenes)
+=======
+>>>>>>> 0545ae9 (update game)
 [node name="grass" instance=ExtResource("1_oibjt")]
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_4" index="0"]
@@ -79,6 +92,9 @@ shadow_mesh = SubResource("ArrayMesh_e1u0e")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_4/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_e4se6")
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0545ae9 (update game)
 
 [node name="Object_5" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, -1.42109e-14, 0, 1.42109e-14, 1, 0, -18.8292, -9.53674e-07)
@@ -269,5 +285,8 @@ skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/farm05_004_0/Object_9/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_e4se6")
+<<<<<<< HEAD
 =======
 >>>>>>> d68432c (create scenes)
+=======
+>>>>>>> 0545ae9 (update game)

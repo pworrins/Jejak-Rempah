@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=18 format=3 uid="uid://b5v3j2qgj4ajy"]
 
 [ext_resource type="Script" path="res://scripts/Level.cs" id="1_amwrb"]
@@ -24,24 +25,36 @@ sky_horizon_color = Color(0.671875, 0.668594, 0.654378, 1)
 sky_cover_modulate = Color(0.773522, 0.817708, 0.110731, 1)
 =======
 [gd_scene load_steps=14 format=3 uid="uid://m71eqtxu4nr"]
+=======
+[gd_scene load_steps=18 format=3 uid="uid://b5v3j2qgj4ajy"]
+>>>>>>> 0545ae9 (update game)
 
+[ext_resource type="Script" path="res://scripts/Level.cs" id="1_amwrb"]
 [ext_resource type="Script" path="res://scripts/UI.cs" id="2_ep4s6"]
-[ext_resource type="FontFile" uid="uid://cojexbo58rhgb" path="res://assets/Font/Daily Bubble.ttf" id="3_w2a04"]
+[ext_resource type="Texture2D" uid="uid://1w5m52n1d1e4" path="res://assets/Images/coin_icon.png" id="3_v77qr"]
 [ext_resource type="PackedScene" uid="uid://dg28me21bhh51" path="res://scenes/Player.tscn" id="4_h1dd1"]
 [ext_resource type="Script" path="res://scripts/GameCam.cs" id="5_kemar"]
-[ext_resource type="MeshLibrary" uid="uid://uvwssspgspdb" path="res://assets/levelgridtiles.tres" id="6_l1ala"]
-[ext_resource type="MeshLibrary" uid="uid://dt4wx5d6e1r21" path="res://assets/Gridmap/buildingRetro.tres" id="6_tjs74"]
 [ext_resource type="PackedScene" uid="uid://cpdvt0dq0e8a8" path="res://scenes/Enemy.tscn" id="7_rrk68"]
 [ext_resource type="PackedScene" uid="uid://bw5xpu662v3kd" path="res://scenes/Coin.tscn" id="8_4pxyv"]
 [ext_resource type="PackedScene" uid="uid://cojq3pd17pawn" path="res://scenes/Flag.tscn" id="9_w2x6f"]
+[ext_resource type="PackedScene" uid="uid://clhutuuamdlug" path="res://scenes/environment/rumah_tangkonang.tscn" id="10_uxn8e"]
+[ext_resource type="PackedScene" uid="uid://cnritjjpfqqyp" path="res://assets/Environment/map/terrain/terrain.tscn" id="13_po20e"]
+[ext_resource type="AudioStream" uid="uid://lgqpb0bysqm3" path="res://audio/toraja.mp3" id="14_e4m3s"]
+[ext_resource type="PackedScene" uid="uid://h5lohow8txe5" path="res://scenes/rempah/Cengkeh.tscn" id="14_q5d17"]
+[ext_resource type="PackedScene" uid="uid://dnkxi7gmdsfl6" path="res://scenes/environment/pulau.tscn" id="16_ibn1k"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qtvwl"]
-font = ExtResource("3_w2a04")
-font_size = 40
+font_size = 61
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ya3l8"]
+<<<<<<< HEAD
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 >>>>>>> d68432c (create scenes)
+=======
+sky_top_color = Color(0.864583, 0.562739, 0.121582, 1)
+sky_horizon_color = Color(0.671875, 0.668594, 0.654378, 1)
+sky_cover_modulate = Color(0.773522, 0.817708, 0.110731, 1)
+>>>>>>> 0545ae9 (update game)
 ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 
 [sub_resource type="Sky" id="Sky_s5ls6"]
@@ -55,9 +68,13 @@ glow_enabled = true
 
 [node name="Level3" type="Node3D"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 script = ExtResource("1_amwrb")
 =======
 >>>>>>> d68432c (create scenes)
+=======
+script = ExtResource("1_amwrb")
+>>>>>>> 0545ae9 (update game)
 
 [node name="UI" type="CanvasLayer" parent="."]
 script = ExtResource("2_ep4s6")
@@ -65,6 +82,7 @@ script = ExtResource("2_ep4s6")
 [node name="hb" type="HBoxContainer" parent="UI"]
 offset_left = 27.0
 offset_top = 32.0
+<<<<<<< HEAD
 <<<<<<< HEAD
 offset_right = 361.0
 offset_bottom = 119.0
@@ -79,6 +97,14 @@ offset_bottom = 101.0
 [node name="TextureRect" type="TextureRect" parent="UI/hb"]
 layout_mode = 2
 >>>>>>> d68432c (create scenes)
+=======
+offset_right = 361.0
+offset_bottom = 119.0
+
+[node name="TextureRect" type="TextureRect" parent="UI/hb"]
+layout_mode = 2
+texture = ExtResource("3_v77qr")
+>>>>>>> 0545ae9 (update game)
 expand_mode = 2
 
 [node name="score_lbl" type="Label" parent="UI/hb"]
@@ -95,16 +121,21 @@ shadow_enabled = true
 
 [node name="character" parent="." instance=ExtResource("4_h1dd1")]
 <<<<<<< HEAD
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59944e-07, 0.536435, 0)
 =======
 transform = Transform3D(-0.998698, 0, 0.0510112, 0, 1, 0, -0.0510112, 0, -0.998698, 0.157991, 0.484482, 0.667846)
 >>>>>>> d68432c (create scenes)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59944e-07, 0.536435, 0)
+>>>>>>> 0545ae9 (update game)
 JUMPVELOCITY = 4.0
 
 [node name="GameCam" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.614614, 0)
 script = ExtResource("5_kemar")
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [node name="Pivot" type="Node3D" parent="GameCam"]
 
@@ -134,11 +165,19 @@ metadata/_editor_floor_ = Vector3(0, 12, 0)
 metadata/_edit_lock_ = true
 
 >>>>>>> d68432c (create scenes)
+=======
+[node name="Pivot" type="Node3D" parent="GameCam"]
+
+[node name="Camera3D" type="Camera3D" parent="GameCam/Pivot"]
+transform = Transform3D(0.707107, -0.183013, 0.683013, 0, 0.965926, 0.258819, -0.707107, -0.183013, 0.683013, 3.49679, 2.13287, 3.30268)
+
+>>>>>>> 0545ae9 (update game)
 [node name="enemies" type="Node" parent="."]
 
 [node name="enemy" parent="enemies" instance=ExtResource("7_rrk68")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.532566, -20)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 [node name="enemy5" parent="enemies" instance=ExtResource("7_rrk68")]
@@ -151,6 +190,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.8712, 0.532566, -32.7326)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.3559, 0.532566, -32.7326)
 
 >>>>>>> d68432c (create scenes)
+=======
+>>>>>>> 0545ae9 (update game)
 [node name="enemy2" parent="enemies" instance=ExtResource("7_rrk68")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90091, 0.532566, -20)
 
@@ -163,6 +204,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.90091, 0.532566, -22.1944)
 [node name="coins" type="Node" parent="."]
 
 [node name="coin" parent="coins" instance=ExtResource("8_4pxyv")]
+<<<<<<< HEAD
 <<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0606, 0.731964, -18.9485)
 
@@ -237,92 +279,82 @@ volume_db = 12.756
 autoplay = true
 =======
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4146, 1.28048, -13.4278)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.0606, 0.731964, -18.9485)
+>>>>>>> 0545ae9 (update game)
 
 [node name="coin2" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3685, 1.28048, -13.4278)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.96286, 1.29027, -22.8101)
 
 [node name="coin3" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4146, 1.28048, -15.8052)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.62234, 2.12508, -31.3706)
 
 [node name="coin4" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3685, 1.28048, -15.8052)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.62234, 2.12508, -31.3706)
 
 [node name="coin5" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4146, 1.28048, -19.6538)
-
-[node name="coin29" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9864, 1.28048, -19.6538)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6654, 1.31818, -31.5239)
 
 [node name="coin6" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.552, 1.28048, -24.237)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.4835, 1.31818, -31.5239)
 
 [node name="coin7" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.5981, 1.28048, -27.707)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0571, 1.31818, -39.4074)
 
 [node name="coin8" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.552, 1.28048, -27.707)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.73, 0.805196, -46.4858)
 
 [node name="coin9" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5445, 1.57976, -46.0271)
-
-[node name="coin27" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.5445, 1.57976, -41.0271)
-
-[node name="coin28" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.5599, 1.57976, -41.0271)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.3193, 1.41794, -45.8128)
 
 [node name="coin10" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.09966, 2.07793, -28.8148)
-
-[node name="coin11" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.493196, 2.07793, -28.8148)
-
-[node name="coin12" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55288, 2.07793, -28.8148)
-
-[node name="coin15" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97703, 2.07793, -35.9635)
-
-[node name="coin16" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.8761, 2.07793, -35.9635)
-
-[node name="coin17" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 3.30601, -44.1246)
-
-[node name="coin18" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -57.7733)
-
-[node name="coin19" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -57.7733)
-
-[node name="coin20" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -57.7733)
-
-[node name="coin21" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -55.2925)
-
-[node name="coin22" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -55.2925)
-
-[node name="coin23" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -55.2925)
-
-[node name="coin24" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.922646, 2.29514, -60.213)
-
-[node name="coin25" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11892, 2.29514, -60.213)
-
-[node name="coin26" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.11429, 2.29514, -60.213)
-
-[node name="coin13" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.26334, 2.07793, -28.8148)
-
-[node name="coin14" parent="coins" instance=ExtResource("8_4pxyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.21726, 3.32605, -28.8148)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.2779, 0.98356, -24.1038)
 
 [node name="flag" parent="." instance=ExtResource("9_w2x6f")]
+<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.974071, 1.44635, -63.4871)
 NextLevelPath = "res://scenes/MainMenu.tscn"
 >>>>>>> d68432c (create scenes)
+=======
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 21.0948, 1.17437, -50.3172)
+NextLevelPath = "res://scenes/levels/Level4.tscn"
+
+[node name="environment" type="Node" parent="."]
+
+[node name="rumah_tangkonan" parent="environment" instance=ExtResource("10_uxn8e")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 17.351, 0.991759, -53.6343)
+
+[node name="pulau" parent="environment" instance=ExtResource("16_ibn1k")]
+transform = Transform3D(600, 0, 0, 0, 600, 0, 0, 0, 600, 11.6539, -33.8876, -15.9861)
+
+[node name="cengkeh" type="Node" parent="."]
+
+[node name="cengkeh" parent="cengkeh" groups=["rempah"] instance=ExtResource("14_q5d17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.06684, 1.77238, -27.3269)
+collision_mask = 2
+
+[node name="cengkeh2" parent="cengkeh" groups=["rempah"] instance=ExtResource("14_q5d17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.30127, 3.64251, -27.3557)
+collision_mask = 2
+
+[node name="cengkeh3" parent="cengkeh" groups=["rempah"] instance=ExtResource("14_q5d17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.5393, 0.509506, -42.1378)
+collision_mask = 2
+
+[node name="cengkeh4" parent="cengkeh" groups=["rempah"] instance=ExtResource("14_q5d17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.78109, 1.87711, -27.3269)
+collision_mask = 2
+
+[node name="cengkeh5" parent="cengkeh" groups=["rempah"] instance=ExtResource("14_q5d17")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.05716, 2.05381, -27.3269)
+collision_mask = 2
+
+[node name="terrain" parent="." instance=ExtResource("13_po20e")]
+transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -14.4566, -0.211874, -55.1628)
+
+[node name="LevelCompleteSound" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26281, 7.62939e-06, 0.00230026)
+stream = ExtResource("14_e4m3s")
+volume_db = 12.756
+autoplay = true
+>>>>>>> 0545ae9 (update game)

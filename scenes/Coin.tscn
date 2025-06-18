@@ -16,7 +16,10 @@ shape = SubResource("SphereShape3D_7wski")
 [node name="coin_fx" type="AudioStreamPlayer" parent="." index="2"]
 stream = ExtResource("3_r5nn0")
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 [connection signal="body_entered" from="." to="." method="Collected"]
 >>>>>>> d68432c (create scenes)
+=======
+>>>>>>> 0545ae9 (update game)
