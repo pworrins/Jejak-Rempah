@@ -1,5 +1,3 @@
----
-
 # 🎮 Jejak Rempah - Game Edukasi Platformer 3D Bertema Rempah Nusantara
 
 **Jejak Rempah** adalah game casual/arcade 3D yang mengajak pemain menjelajah kepulauan Nusantara untuk mengumpulkan berbagai rempah-rempah khas Indonesia. Game ini dikembangkan sebagai adaptasi dan modifikasi dari template platformer 3D Godot dengan C#, yang dikembangkan lebih lanjut untuk memperkenalkan kekayaan budaya dan rempah Indonesia secara menyenangkan dan interaktif.
