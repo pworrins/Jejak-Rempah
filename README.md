@@ -153,7 +153,7 @@ Game ini dikembangkan dengan referensi dari tutorial:
 Jika kamu tertarik untuk berkontribusi, memberikan saran, atau ingin menggunakan game ini sebagai media edukasi:
 
 📧 Email: `ftrslwa8@gmail.com`
-👩‍🎓 Dibuat sebagai bagian dari proyek Game Design dan pengenalan budaya digital
+👩‍🎓 Dibuat sebagai tugas besar mata kuliah Komputer Grafik 
 
 ---
 
